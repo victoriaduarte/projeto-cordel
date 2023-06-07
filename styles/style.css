@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 10vw;
+    letter-spacing: .01em;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 1em;
+}
+
+header a, footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; 
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh; /* variar a altura das seções a depender do tamanho da tela*/
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+section.com-img p {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 4px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+section.sem-img {
+    background-color: #fff;
+}
+
+section#img01 {
+    box-shadow: 6px 6px 13px 0px inset rgba(0, 0, 0, 0.4);
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+    padding: 12vw 6vw;
+}
+
+section#img02 {
+    box-shadow: 6px 6px 13px 0px inset rgba(0, 0, 0, 0.4);
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+    padding: 12vw 6vw;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+
+}
+
+footer p {
+    font-size: 1em;
+}
